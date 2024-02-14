@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
     "To all the incredible women, may this day remind you of how much you are loved and cherished.",
     "May your day be filled with love and happiness.",
     "Keep being fabulous, today and every day!",
-    "a"
+    ""
   ];
 
   var messageIndex = 0; // Initialize message index
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
       messageElement.textContent = messages[messageIndex];
 
       // Redirect if the last message is shown
-      if (messages[messageIndex] === "a") {
+      if (messages[messageIndex] === "") {
         window.location.href = 'ending.html'; // Redirects to ending.html
       }
     }
